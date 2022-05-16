@@ -11,9 +11,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Install and Build
-        run: npm ci
-        run: npm run build
+      -  run: npm ci
+      -  run: npm run build
 
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
